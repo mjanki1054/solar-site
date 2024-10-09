@@ -1718,3 +1718,18 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+.maintenace-fill{
+
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.maintenace-fill h2{
+  font-size: large;
+  font-weight: 700;
+}
+
+.maintenace-fill p{
+  color:#5f6361
+}
