@@ -24,6 +24,7 @@
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #3498db; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --newaccent-color:#14a835;
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -898,7 +899,7 @@ section,
 }
 
 .services .service-item i {
-  background: var(--accent-color);
+  background: var(--newaccent-color);
   color: var(--contrast-color);
   font-size: 24px;
   transition: 0.3s;
@@ -930,7 +931,7 @@ section,
 
 .services .service-item:hover:before,
 .services .service-item:hover:after {
-  background: var(--accent-color);
+  background: var(--newaccent-color);
   right: 0;
   top: 0;
   width: 100%;
@@ -945,7 +946,7 @@ section,
 
 .services .service-item:hover i {
   background: var(--surface-color);
-  color: var(--accent-color);
+  color: var(--newaccent-color);
 }
 
 /*--------------------------------------------------------------
