@@ -441,107 +441,152 @@ h6 {
     display: block;
   }
 }
-
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
   background-color: var(--background-color);
+  color: var(--default-color);
+  padding: 60px 0;
   font-size: 14px;
-  padding: 40px 0;
-  position: relative;
-  /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-
-.footer .footer-newsletter {
-  background-color: color-mix(in srgb, var(--newaccent-color), transparent 97%);
-  padding: 50px 0;
+.footer a {
+  color: var(--default-color) !important;
 }
 
-.footer .footer-newsletter h4 {
-  font-size: 28px;
-  font-weight: 700;
+.footer a:hover {
   color: var(--newaccent-color);
 }
 
-.footer .footer-newsletter .newsletter-form {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding: 6px 8px;
+.footer .copyright {
+  margin-top: 50px;
   position: relative;
-  background-color: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  display: flex;
-  transition: 0.3s;
-  border-radius: 50px;
+  padding-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.footer .footer-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
+.footer .copyright p,
+.footer .copyright .credits {
+  margin: 2px 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
-  border: 0;
-  padding: 4px 10px;
-  width: 100%;
-  background-color: var(--surface-color);
-  color: var(--default-color);
+.footer .btn-learn-more {
+  background-color: var(--newaccent-color);
+  border-radius: 30px;
+  padding: 8px 30px;
+  border: 2px solid transparent;
+  transition: 0.3s all ease-in-out;
+  font-size: 14px;
+  color: var(--contrast-color) !important;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
-  outline: none;
+.footer .btn-learn-more:hover {
+  border-color: var(--newaccent-color);
+  background-color: transparent;
+  color: var(--accent-color) !important;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
-  border: 0;
-  font-size: 16px;
-  padding: 0 20px;
-  margin: -7px -8px -7px 0;
-  background: var(--newaccent-color);
-  color: var(--contrast-color);
-  transition: 0.3s;
-  border-radius: 50px;
+.footer .widget .widget-heading {
+  font-size: 15px;
+  color: var(--heading-color);
+  margin-bottom: 20px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--newaccent-color), transparent 20%);
+.footer .widget ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
-
-.footer .copyright p {
-  margin-bottom: 0;
+.footer .widget ul li a {
+  color: color-mix(in srgb, var(--heading-color), transparent 50%);
 }
 
-.footer .social-links {
-  margin-top: 20px;
+.footer .widget ul li a:hover {
+  text-decoration: none;
+  color: var(--heading-color);
 }
 
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer .widget .footer-blog-entry .date {
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 12px;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+}
+
+.footer .social-icons li a {
+  display: inline-block;
   width: 40px;
   height: 40px;
+  position: relative;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin: 0 5px;
-  transition: 0.3s;
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.footer .social-links a:hover {
-  color: var(--newaccent-color);
-  border-color: var(--newaccent-color);
+.footer .social-icons li a span {
+  color: color-mix(in srgb, var(--heading-color), transparent 0%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s all ease-in-out;
 }
 
-.footer .credits {
-  margin-top: 10px;
-  font-size: 13px;
-  text-align: center;
+.footer .social-icons li a:hover {
+  background: var(--newaccent-color);
+}
+
+.footer .social-icons li a:hover span {
+  color: var(--contrast-color);
+}
+
+.footer .social-icons li:first-child a {
+  padding-left: 0;
+}
+
+.footer .footer-subscribe form {
+  position: relative;
+}
+
+.footer .footer-subscribe .form-control {
+  font-size: 14px;
+  height: 42px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 40%);
+  background: none;
+  color: var(--heading-color);
+  padding-right: 40px;
+}
+
+.footer .footer-subscribe .form-control:focus {
+  border-color: color-mix(in srgb, var(--default-color), transparent 10%);
+  box-shadow: none;
+}
+
+.footer .footer-subscribe .form-control::placeholder {
+  color: color-mix(in srgb, var(--heading-color), transparent 60%);
+}
+
+.footer .footer-subscribe .btn-link {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  background-color: none;
+  border-color: none;
+  position: absolute;
+  line-height: 0;
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  top: 20px;
+  right: 10px;
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.footer .footer-subscribe .btn-link:hover,
+.footer .footer-subscribe .btn-link:focus,
+.footer .footer-subscribe .btn-link:active {
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -578,7 +623,6 @@ h6 {
     transform: rotate(360deg);
   }
 }
-
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -628,7 +672,7 @@ h6 {
   --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -887,35 +931,41 @@ section,
   color: var(--newaccent-color);
 }
 
-/*--------------------------------------------------------------
-# Stats Section
+
+.about img{
+  width: 90%;
+}
+
+
+  /*--------------------------------------------------------------
+# Stats Counter Section
 --------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 10px;
+.stats-counter .stats-item {
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
-.stats .stats-item i {
-  font-size: 44px;
+.stats-counter .stats-item i {
   color: var(--newaccent-color);
+  font-size: 42px;
   line-height: 0;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
-.stats .stats-item .purecounter {
+.stats-counter .stats-item span {
   color: var(--heading-color);
-  font-size: 40px;
+  font-size: 36px;
   display: block;
-  font-weight: 700;
-  line-height: 40px;
+  font-weight: 600;
 }
 
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
+.stats-counter .stats-item p {
+  padding: 0;
   margin: 0;
   font-family: var(--heading-font);
-  font-size: 14px;
+  font-size: 16px;
 }
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1216,118 +1266,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 10px;
-  line-height: 1;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
-
-.portfolio .portfolio-content {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio .portfolio-content img {
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-}
-
-.portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
-  padding: 5px 10px;
-  font-weight: 400;
-  color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);
-}
-
-.portfolio .portfolio-content .portfolio-info p {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
-  position: absolute;
-  left: calc(50% - 40px);
-  font-size: 26px;
-  top: calc(50% - 14px);
-  color: #fff;
-  transition: 0.3s;
-  line-height: 1.2;
-}
-
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
-  font-size: 34px;
-  line-height: 0;
-}
-
-.portfolio .portfolio-content:hover .portfolio-info {
-  opacity: 1;
-}
-
-.portfolio .portfolio-content:hover img {
-  transform: scale(1.1);
-}
-
-/*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
@@ -1510,7 +1448,7 @@ section,
 
 .contact .info-item i {
   font-size: 20px;
-  color: var(--accent-color);
+  color: var(--newaccent-color);
   background: color-mix(in srgb, var(--newaccent-color), transparent 92%);
   width: 44px;
   height: 44px;
@@ -1594,67 +1532,116 @@ section,
 
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# Portfolio Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.portfolio .portfolio-content {
   position: relative;
+  overflow: hidden;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
+.portfolio .portfolio-content img {
+  transition: 0.3s;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio .portfolio-content .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.portfolio .portfolio-content .portfolio-info h4 {
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
-  background-color: var(--surface-color);
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+.portfolio .portfolio-content .portfolio-info p {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
+  position: absolute;
+  left: calc(50% - 40px);
   font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  top: calc(50% - 14px);
+  color: #fff;
+  transition: 0.3s;
+  line-height: 1.2;
 }
 
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+.portfolio .portfolio-content .portfolio-info .preview-link:hover,
+.portfolio .portfolio-content .portfolio-info .details-link:hover {
+  color: var(--accent-color);
 }
 
+.portfolio .portfolio-content .portfolio-info .details-link {
+  left: 50%;
+  font-size: 34px;
+  line-height: 0;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1);
+}
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
@@ -1739,3 +1726,354 @@ section,
 .maintenace-fill p{
   color:#5f6361
 }
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  padding: 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 14px;
+  font-size: 28px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details Section
+--------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .swiper-wrapper {
+  height: auto;
+}
+
+.portfolio-details .swiper-button-prev,
+.portfolio-details .swiper-button-next {
+  width: 48px;
+  height: 48px;
+}
+
+.portfolio-details .swiper-button-prev:after,
+.portfolio-details .swiper-button-next:after {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.portfolio-details .swiper-button-prev:hover:after,
+.portfolio-details .swiper-button-next:hover:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 575px) {
+
+  .portfolio-details .swiper-button-prev,
+  .portfolio-details .swiper-button-next {
+    display: none;
+  }
+}
+
+.portfolio-details .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.portfolio-details .portfolio-info ul strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 14px;
+}
+
+.portfolio-details .portfolio-info .btn-visit {
+  padding: 8px 40px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.portfolio-details .portfolio-info .btn-visit:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  margin-bottom: 50px;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid var(--background-color);
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  padding-top: 20px;
+}
+
+.portfolio-details .portfolio-description .testimonial-item h4 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.portfolio-details .portfolio-description .testimonial-item p {
+  font-style: italic;
+  margin: 0 0 15px 0 0 0;
+  padding: 0;
+}
+
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+  font-weight: 700;
+  color: #72bd26;
+  border-bottom: 3px solid #72bd26;
+}
+
+#newsroom .nav-link{
+  font-weight: 500;
+
+}
+
+.year24 {
+  height: 50px;
+  width: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.toggle-list {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-item {
+  margin-bottom: 10px;
+  padding: 10px 0;
+
+}
+
+.news-item .date {
+  font-weight: bold;
+  font-size: 14px;
+  color: #656565;
+  text-decoration: underline;
+
+}
+
+.news-item .news-text {
+  margin-left: 40px;
+  color: #127DC2;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.news-item a {
+  text-decoration: underline;
+}
+
+
+
+/***************************************************************************************************************************************
+*   PROJECT DESIGN
+***************************************************************************************************************************************/
+
+.capacity-item {
+  background-color: #333; /* Dark background similar to the image */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
