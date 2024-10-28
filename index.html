@@ -46,32 +46,31 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="./index.html" class="active">Home<br></a></li>
-          <li><a href="./about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#about">who we are</a></li>
+              <li><a href="#vision-and-mission">vision and mission</a></li>
+              <li><a href="#stats-counter">Happy clients</a></li>
+              <li><a href="#team">our team</a></li>
+              <li><a href="#policy-certification">Policy and Certification</a></li>
+              <li><a href="#faq">Recent Faq</a></li>
+
+            </ul>
+          </li>
           <li><a href="./services.html">Services</a></li>
           <li><a href="./newsroom.html">Newsroom</a></li>
-          <li><a href="./project.html">Project</a></li>
-          <!-- <li><a href="#team">Team</a></li> -->
-         <!--  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        
+
+          <li class="dropdown"><a href="#"><span>Project</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="./project.html">project</a></li>
+              <li><a href="./utility.html">Utility</a></li>
             </ul>
-          </li> -->
-          <li><a href="./energy-transition.html" >energy-transition</a></li>
+          </li>
+          <li><a href="./energy-transition.html" >Energy-transition</a></li>
           <li><a href="./sustainability.html" >sustainability</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./career.html">career</a></li>
+          <li><a href="./career.html">Career</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -120,7 +119,7 @@
 
           <div class="col-xl-6 about-hero" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
-              <img src="./assets/img/about us1.png" height="350px" width="auto" alt="about us" />
+              <img src="./assets/img/about_us_side_image2-transformed.jpeg" height="320px" width="auto" alt="about us" style=" padding: 5px;border:1px solid #29cc61;"/>
 
 
             </div>
@@ -529,15 +528,15 @@
 
 
 
-
+<!--
 
     <section id="faq" class="faq section light-background">
 
-      <!-- Section Title -->
+
       <div class="container section-title" data-aos="fade-up">
         <h2>Newly FAQ ?</h2>
         <p>Learn about solar energy benefits, including cost savings, ROI, and eco-friendly solutions for businesses.</p>
-      </div><!-- End Section Title -->
+      </div>
     
       <div class="container">
         <div class="row">
@@ -549,7 +548,7 @@
                   <p>By installing solar panels, businesses can significantly cut down on electricity bills. Solar energy provides a reliable and renewable power source, reducing dependency on conventional energy sources and allowing for long-term savings.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
       
               <div class="faq-item">
                 <h3>What are the tax incentives for adopting renewable energy in business?</h3>
@@ -557,7 +556,7 @@
                   <p>Many governments offer tax credits and incentives for businesses that invest in renewable energy solutions, such as solar panels. These incentives can include accelerated depreciation, investment tax credits, and grants to help offset the initial installation costs.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
       
               <div class="faq-item">
                 <h3>How long does it take to see ROI on a solar energy installation?</h3>
@@ -565,9 +564,9 @@
                   <p>The return on investment (ROI) for a solar energy system typically ranges from 5 to 8 years, depending on factors like installation costs, electricity consumption, and available incentives. After this period, businesses enjoy free, renewable energy.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
             </div>
-          </div><!-- End Faq Column-->
+          </div>
       
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-container">
@@ -577,7 +576,7 @@
                   <p>Most commercial solar energy systems have a lifespan of 25-30 years. During this time, regular maintenance ensures optimal performance. Advances in solar technology have increased durability, making these systems highly reliable for long-term energy solutions.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
       
               <div class="faq-item">
                 <h3>Can solar energy be integrated with existing power grids for businesses?</h3>
@@ -585,7 +584,7 @@
                   <p>Yes, solar energy systems can be easily integrated with existing power grids through net metering. This allows businesses to use solar power during the day and rely on the grid when needed, potentially selling excess solar power back to the utility company.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
       
               <div class="faq-item">
                 <h3>How can solar energy improve my business's sustainability efforts?</h3>
@@ -593,13 +592,15 @@
                   <p>Solar energy significantly reduces carbon emissions and reliance on fossil fuels, enhancing your business's sustainability and demonstrating environmental responsibility to customers and stakeholders.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
             </div>
-          </div><!-- End Faq Column-->
+          </div>
         </div>
       </div>
       
-    </section><!-- /Faq Section -->
+    </section>
+
+  -->
     
    
 
