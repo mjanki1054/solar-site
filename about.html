@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Vrita Engineering Energy</title>
+  <title>Vrita Energy Engineering</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -92,14 +92,17 @@
       </div><!-- End Page Title -->
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section position-relative">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <!-- Video embedded here -->
-          <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
-            <source src="./assets/img/hero/hero-video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+    <section id="job-opening-hero" class="job-opening-section position-relative overflow-hidden" style="height: 60vh;">
+      <div class="container-fluid p-0 h-100">
+        <!-- Background image as an <img> element filling the section -->
+        <img src="./assets/img/about-us-hero.jpg" 
+             alt="hero image of about us" 
+             class="w-100 h-95 position-absolute top-0 start-0" 
+             style="object-fit: cover;">
+    
+        <!-- Centered Text -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="z-index: 1;">
+          <h1 style="color:white; font-size: 4.2rem; font-weight:800;">About Us</h1>
         </div>
       </div>
     </section>
@@ -123,15 +126,15 @@
 
     <section id="vision-and-mission">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-stretch"> <!-- Added align-items-stretch to ensure equal height -->
           <!-- Vision Section -->
           <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <h3 class="p-4 border-bottom" style="font-size: 18px; font-weight: 700;">
+            <div class="service-item position-relative h-100"> <!-- Added h-100 for full height -->
+              <h3 class="p-4 border-bottom" style="font-size: 18px; font-weight: 700; text-align: right;">
                 <span style="border-bottom: solid 4px #14a835;">Our Vision</span>
               </h3>
-              <p class="p-5" style="font-size: 14px;">
-                At Vrita Energy Engineering, we envision a future where sustainable energy powers the world. Our goal is to foster a clean and green environment, free from the harmful emissions of fossil fuels, and to support the global shift toward renewable energy. We believe that through solar energy, we can drive this change, offering scalable, clean power solutions that will transform industries and communities.
+              <p class="px-5" style="font-size: 14px;">
+                At Vrita Energy Engineering, we envision a future where sustainable energy powers the world. Our goal is to foster a clean and green environment, free from the harmful emissions of fossil fuels, and to support the global shift toward renewable energy. We believe that through solar energy, we can drive this change, offering scalable, clean power solutions that will transform industries and communities. 
                 We are committed to reducing carbon footprints and environmental degradation by making solar energy the primary source of power across various sectors. Our vision aligns with India's broader goal of becoming a renewable energy leader on the global stage.
               </p>
             </div>
@@ -143,12 +146,12 @@
             </div>
           </div>
           <!-- Mission Section -->
-          <div class="col-lg-5 my-auto" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item position-relative">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item position-relative h-100"> <!-- Added h-100 for full height -->
               <h3 class="p-4 border-bottom" style="font-size: 18px; font-weight: 700;">
                 <span style="border-bottom: solid 4px #14a835;">Our Mission</span>
               </h3>
-              <p class="p-5" style="font-size: 14px;">
+              <p class="px-5" style="font-size: 14px;">
                 At Vrita Energy Engineering, our mission is clear: to empower communities and businesses by delivering dependable, cost-efficient, and sustainable solar energy solutions. We are committed to creating environmentally responsible energy systems that meet the growing demand for clean power. By leveraging cutting-edge technology and adopting best practices in the renewable energy sector, we strive to make clean energy accessible to all, while promoting environmental sustainability and reducing dependence on fossil fuels.
               </p>
             </div>
@@ -156,6 +159,7 @@
         </div>
       </div>
     </section>
+    
 
      <!-- Stats Counter Section -->
   <section id="stats-counter" class="stats-counter section">

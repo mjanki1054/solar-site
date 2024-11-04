@@ -750,7 +750,7 @@ section, .job-opening-section
  {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0 60px 0 ;
+  padding: 0 0 0 0 ;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -768,7 +768,7 @@ section, .job-opening-section
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
 }
 
