@@ -62,7 +62,25 @@
     z-index: 2;
   }
 
+/**/
+@keyframes blink {
+    0% {
+        color: yellow;
+    }
+    50% {
+        color: rgb(52, 8, 69);
+    }
+    100% {
+        color: yellow;
+    }
+}
 
+button#gif {
+    animation: blink 1s infinite;
+}
+
+
+/**/
   
   </style>
 
@@ -121,8 +139,8 @@
     <section id="hero">
       <div id="carouselExampleAutoplaying" class="carousel slide vh-50" data-bs-ride="carousel">
         <div class="carousel-inner h-100">
-          <div class="carousel-item active position-relative">
-            <img src="./assets/img/slider-img/sliderImg5-1.jpg" height="450px" class="d-block w-100" alt="...">
+          <div class="carousel-item active position-relative" data-bs-interval="6000">
+            <img src="./assets/img/slider-img/sliderImg5.jpg" height="550px" class="d-block w-100" alt="...">
             <div class="gradient-overlay"></div>
             <div class="carousel-caption carousel-caption-left d-flex flex-column justify-content-center">
               <h2 class="text-light">Welcome to</h2>
@@ -130,16 +148,16 @@
               <p class="text-light">Join us in harnessing the power of the sun for a cleaner, greener tomorrow.</p>
             </div>
           </div>
-          <div class="carousel-item position-relative">
-            <img src="./assets/img/slider-img/sliderImg2-1.jpg" height="450px" class="d-block w-100" alt="...">
+          <div class="carousel-item position-relative"  data-bs-interval="6000">
+            <img src="./assets/img/slider-img/sliderImg2.jpg" height="550px" class="d-block w-100" alt="...">
             <div class="gradient-overlay"></div>
             <div class="carousel-caption carousel-caption-left d-flex flex-column justify-content-center">
               <h2 class="text-light">Powering Sustainability</h2>
               <p class="text-light">Empowering communities with reliable, solar-powered energy solutions.</p>
             </div>
           </div>
-          <div class="carousel-item position-relative">
-            <img src="./assets/img/slider-img/sliderImg3-1.jpg" height="450px" class="d-block w-100" alt="...">
+          <div class="carousel-item position-relative"  data-bs-interval="6000">
+            <img src="./assets/img/slider-img/sliderImg3.jpg" height="550px" class="d-block w-100" alt="...">
             <div class="gradient-overlay"></div>
             <div class="carousel-caption carousel-caption-left d-flex flex-column justify-content-center">
               <h2 class="text-light">Innovative Solar Solutions</h2>
@@ -162,11 +180,20 @@
     <div class="new-sec" style="background-color: #040e36;">
       <div class="container">
         <div class="row d-flex align-items-center" style="height: 60px;border-top: 1px solid white;">
-          <div class="col-3 text-white" style="border-right: 2px solid white;font-weight: 600;">LATEST UPDATES</div>
+          <div class="col-3 text-white" style="border-right: 2px solid white;font-weight: 600;display: flex;justify-content: center;align-items: center;">LATEST UPDATES</div>
           <div class="col-9 text-white text-slider" style="font-size: 13px;">
-            <div class="scrolling-text">
-              <div class="swiper-wrapper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ullam porro aliquam quisquam laudantium, laboriosam magnam doloremque quas eveniet esse cum.</div>
-
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <span class="d-block w-75">Directors Vivek and Nitesh Singh lead Vrita's strategic growth, focusing on renewable infrastructure<button id="gif" style="background-color: transparent;border: none;">new!</button></span>
+                </div>
+                <div class="carousel-item">
+                  <span class="d-block w-75">Advancing solar innovation, Vrita Energy commits to sustainable energy solutions across India​<button id="gif" style="background-color: transparent;border: none;">new!</button></span>
+                </div>
+                <div class="carousel-item">
+                  <span class="d-block w-75">Vrita Energy boosts Jharkhand’s solar energy infrastructure with cutting-edge projects to meet local demands<button id="gif" style="background-color: transparent;border: none;">new!</button></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
